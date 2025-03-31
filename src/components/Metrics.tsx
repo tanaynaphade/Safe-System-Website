@@ -16,7 +16,7 @@ const Metrics = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {metrics.map((metric, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-4xl md:text-5xl font-bold text-blue-500 mb-4">{metric.number}</div>
+              <div className="text-4xl md:text-5xl font-bold text-pink-500 mb-4">{metric.number}</div>
               <div className="text-lg">{metric.text}</div>
             </div>
           ))}

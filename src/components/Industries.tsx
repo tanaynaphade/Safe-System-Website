@@ -21,7 +21,7 @@ const Industries = () => {
           {industries.map((industry, index) => (
             <div 
               key={index} 
-              className="bg-gray-100 p-6 rounded-lg text-center font-bold hover:bg-blue-500 hover:text-white transition-colors"
+              className="bg-gray-100 p-6 rounded-lg text-center font-bold hover:bg-pink-500 hover:text-white transition-colors"
             >
               {industry}
             </div>
