@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 inline-block relative">
           About Us
-          <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500"></span>
+          <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-pink-500"></span>
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg mb-6">
@@ -18,7 +18,7 @@ const About = () => {
           </p>
           <a 
             href="#" 
-            className="inline-block bg-blue-500 text-white px-6 py-3 rounded font-bold uppercase tracking-wide hover:bg-blue-600 transition-colors"
+            className="inline-block bg-pink-500 text-white px-6 py-3 rounded font-bold uppercase tracking-wide hover:bg-maroon-500 transition-colors"
           >
             Learn More About Us
           </a>

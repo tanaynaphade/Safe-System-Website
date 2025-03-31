@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 relative inline-block">
               About Us
-              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-blue-500"></span>
+              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-pink-500"></span>
             </h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Our Story</a></li>
@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 relative inline-block">
               Solutions
-              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-blue-500"></span>
+              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-pink-500"></span>
             </h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Home Security</a></li>
@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 relative inline-block">
               Resources
-              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-blue-500"></span>
+              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-pink-500"></span>
             </h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
@@ -45,7 +45,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 relative inline-block">
               Contact
-              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-blue-500"></span>
+              <span className="absolute left-0 bottom-[-10px] w-10 h-0.5 bg-pink-500"></span>
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center">

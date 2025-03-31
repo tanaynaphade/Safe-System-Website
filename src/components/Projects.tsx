@@ -48,7 +48,7 @@ const Projects = () => {
         <div className="text-center mt-12">
           <a 
             href="#" 
-            className="inline-block bg-blue-500 text-white px-6 py-3 rounded font-bold uppercase tracking-wide hover:bg-blue-600 transition-colors"
+            className="inline-block bg-pink-500 text-white px-6 py-3 rounded font-bold uppercase tracking-wide hover:bg-maroon-500 transition-colors"
           >
             View All Projects
           </a>
