@@ -4,47 +4,47 @@ import { Home, Video, Lock, Star, AlertTriangle, Building, Zap, Cloud, Smartphon
 
 const solutions = [
   {
-    icon: <Home className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Home className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Smart Home Automation',
     description: 'Integrated control systems for residential properties'
   },
   {
-    icon: <Video className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Video className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'AI-Powered Surveillance',
     description: 'Advanced CCTV with behavior analytics'
   },
   {
-    icon: <Lock className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Lock className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Access Control Systems',
     description: 'Biometric and multi-factor authentication solutions'
   },
   {
-    icon: <AlertTriangle className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <AlertTriangle className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Fire Detection & Safety',
     description: 'Early warning systems with smart alerts'
   },
   {
-    icon: <Star className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Star className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Emergency Communication',
     description: 'Public address and mass notification systems'
   },
   {
-    icon: <Building className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Building className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Building Management',
     description: 'Comprehensive property monitoring and control'
   },
   {
-    icon: <Zap className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Zap className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Energy Management',
     description: 'Optimized consumption and sustainability solutions'
   },
   {
-    icon: <Cloud className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Cloud className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Cloud Security Platform',
     description: 'Remote monitoring and management capabilities'
   },
   {
-    icon: <Smartphone className="w-10 h-10 text-blue-500 mx-auto" />,
+    icon: <Smartphone className="w-10 h-10 text-pink-500 mx-auto" />,
     title: 'Mobile Security Apps',
     description: 'Control your security systems from anywhere'
   }

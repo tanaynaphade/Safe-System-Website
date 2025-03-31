@@ -4,32 +4,32 @@ import { Star, Users, Clock, Search, Settings, Phone } from 'lucide-react';
 
 const usps = [
   {
-    icon: <Star className="w-12 h-12 text-blue-500 mx-auto" />,
+    icon: <Star className="w-12 h-12 text-pink-500 mx-auto" />,
     title: 'Industry Leadership',
     description: '20 years of security expertise ensures excellence in every installation.'
   },
   {
-    icon: <Users className="w-12 h-12 text-blue-500 mx-auto" />,
+    icon: <Users className="w-12 h-12 text-pink-500 mx-auto" />,
     title: 'Expert Team',
     description: 'Our specialized professionals deliver comprehensive, efficient implementations.'
   },
   {
-    icon: <Clock className="w-12 h-12 text-blue-500 mx-auto" />,
+    icon: <Clock className="w-12 h-12 text-pink-500 mx-auto" />,
     title: 'Reliable Delivery',
     description: 'We commit to punctual project completion with consistent quality.'
   },
   {
-    icon: <Search className="w-12 h-12 text-blue-500 mx-auto" />,
+    icon: <Search className="w-12 h-12 text-pink-500 mx-auto" />,
     title: 'Advanced Technology',
     description: 'Cutting-edge security solutions with future-proof designs from day one.'
   },
   {
-    icon: <Settings className="w-12 h-12 text-blue-500 mx-auto" />,
+    icon: <Settings className="w-12 h-12 text-pink-500 mx-auto" />,
     title: 'Technical Excellence',
     description: 'Certified engineers dedicated to seamless implementation and support.'
   },
   {
-    icon: <Phone className="w-12 h-12 text-blue-500 mx-auto" />,
+    icon: <Phone className="w-12 h-12 text-pink-500 mx-auto" />,
     title: 'Responsive Support',
     description: 'Consistent, competent service with 24/7 monitoring capabilities.'
   },

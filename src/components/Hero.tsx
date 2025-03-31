@@ -14,7 +14,7 @@ const Hero = () => {
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">Advanced integrated security solutions for businesses and homes with cutting-edge technology and expert implementation</p>
         <a 
           href="#projects" 
-          className="bg-blue-500 text-white px-6 py-3 rounded font-bold uppercase tracking-wide hover:bg-blue-600 transition-colors"
+          className="bg-pink-500 text-white px-6 py-3 rounded font-bold uppercase tracking-wide hover:bg-maroon-500 transition-colors"
         >
           View Our Projects
         </a>
