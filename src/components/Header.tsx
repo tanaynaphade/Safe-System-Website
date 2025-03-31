@@ -1,23 +1,28 @@
-
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { cn } from '@/lib/utils';
+} from './ui/navigation-menu'; // Adjusted path
+import { cn } from '../lib/utils'; // Adjusted path
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Initialize the navigate function
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -31,54 +36,59 @@ const Header = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link to="/#about">
-                    <NavigationMenuLink className={cn(
+                  <NavigationMenuLink 
+                    className={cn(
                       navigationMenuTriggerStyle(),
                       "bg-transparent hover:bg-pink-400/20 text-white"
-                    )}>
-                      About
-                    </NavigationMenuLink>
-                  </Link>
+                    )}
+                    onClick={() => scrollToSection('about')}
+                  >
+                    About
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link to="/#projects">
-                    <NavigationMenuLink className={cn(
+                  <NavigationMenuLink 
+                    className={cn(
                       navigationMenuTriggerStyle(),
                       "bg-transparent hover:bg-pink-400/20 text-white"
-                    )}>
-                      Projects
-                    </NavigationMenuLink>
-                  </Link>
+                    )}
+                    onClick={() => scrollToSection('projects')}
+                  >
+                    Projects
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link to="/#solutions">
-                    <NavigationMenuLink className={cn(
+                  <NavigationMenuLink 
+                    className={cn(
                       navigationMenuTriggerStyle(),
                       "bg-transparent hover:bg-pink-400/20 text-white"
-                    )}>
-                      Solutions
-                    </NavigationMenuLink>
-                  </Link>
+                    )}
+                    onClick={() => scrollToSection('solutions')}
+                  >
+                    Solutions
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link to="/#industries">
-                    <NavigationMenuLink className={cn(
+                  <NavigationMenuLink 
+                    className={cn(
                       navigationMenuTriggerStyle(),
                       "bg-transparent hover:bg-pink-400/20 text-white"
-                    )}>
-                      Industries
-                    </NavigationMenuLink>
-                  </Link>
+                    )}
+                    onClick={() => scrollToSection('industries')}
+                  >
+                    Industries
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link to="/#contact">
-                    <NavigationMenuLink className={cn(
+                  <NavigationMenuLink 
+                    className={cn(
                       navigationMenuTriggerStyle(),
                       "bg-transparent hover:bg-pink-400/20 text-white"
-                    )}>
-                      Contact
-                    </NavigationMenuLink>
-                  </Link>
+                    )}
+                    onClick={() => scrollToSection('contact')}
+                  >
+                    Contact
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -103,11 +113,11 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-2 space-y-3">
-            <a href="#about" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={toggleMenu}>About</a>
-            <a href="#projects" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={toggleMenu}>Projects</a>
-            <a href="#solutions" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={toggleMenu}>Solutions</a>
-            <a href="#industries" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={toggleMenu}>Industries</a>
-            <a href="#contact" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={toggleMenu}>Contact</a>
+            <a href="#about" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={() => { toggleMenu(); scrollToSection('about'); }}>About</a>
+            <a href="#projects" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={() => { toggleMenu(); scrollToSection('projects'); }}>Projects</a>
+            <a href="#solutions" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={() => { toggleMenu(); scrollToSection('solutions'); }}>Solutions</a>
+            <a href="#industries" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={() => { toggleMenu(); scrollToSection('industries'); }}>Industries</a>
+            <a href="#contact" className="block py-2 px-4 text-white hover:bg-pink-400/20 rounded transition-colors" onClick={() => { toggleMenu(); scrollToSection('contact'); }}>Contact</a>
           </div>
         )}
       </div>
